@@ -21,7 +21,7 @@
 
  <!-- search bar -->
  <form class="flex justify-center items-center mt-6.5" id="searchForm">
-  <input type="text" placeholder="Search for any IP address or domain" class="rounded-bl-[10px] rounded-tl-[10px] h-12.5 pl-3.5 pr-35 bg-white hover:border-gray-700 hover:border" id="ipInput">
+  <input type="text" placeholder="Search for any IP address" class="text-[14px] rounded-bl-[10px] rounded-tl-[10px] h-12.5 pl-3.5 pr-30 bg-white hover:border-gray-700 hover:border" id="ipInput">
   <button
   type="submit"
   class="h-12.5 w-12.5 rounded-br-[10px] rounded-tr-[10px] bg-black flex justify-center items-center hover:bg-gray-900">
@@ -35,10 +35,18 @@
 <!-- Upper body (image) for mobile -->
 <div class="w-full h-72 bg-no-repeat bg-cover bg-center sm:hidden" style="background-image: url('ip-address-tracker-master/images/pattern-bg-mobile.png');">
   <h1 class="text-white text-2xl text-center pt-5">IP Address Tracker</h1>
+   <!-- search bar -->
+ <form class="flex justify-center items-center mt-6.5" id="searchForm">
+  <input type="text" placeholder="Search for any IP address" class="text-[14px] rounded-bl-[10px] rounded-tl-[10px] h-12.5 pl-3.5 pr-8 bg-white hover:border-gray-700 hover:border" id="ipInput">
+  <button
+  type="submit"
+  class="h-12.5 w-12.5 rounded-br-[10px] rounded-tr-[10px] bg-black flex justify-center items-center hover:bg-gray-900">
+  <img src="ip-address-tracker-master/images/icon-arrow.svg" alt="icon">
+</button>
 </div>
 
 <!-- User's IP details -->
- <div class="flex justify-evenly md:py-12.5 py-9 px-9 max-md:mx-[15%] mx-[5%] max-md:flex-col gap-7 bg-white rounded-xl shadow-xl relative max-sm:bottom-50 max-md:bottom-30 md:bottom-25 z-99">
+ <div class="flex justify-evenly md:py-12.5 py-9 px-9 max-md:mx-[15%] mx-[5%] max-md:flex-col gap-7 bg-white rounded-xl shadow-xl relative bottom-30 md:bottom-25 z-99">
 <div class="flex-col max-md:text-center space-y-3.5">
 <p class="text-gray-500 text-[14px]">IP ADDRESS</p>
 <p class="text-[22px] font-medium" id="ip_address"></p>

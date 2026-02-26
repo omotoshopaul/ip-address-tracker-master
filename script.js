@@ -44,7 +44,6 @@ async function updateTracker(query = "") {
   }
 }
 
-
 searchForm.addEventListener("submit", e => {
   e.preventDefault();
   updateTracker(ipInput.value.trim());
