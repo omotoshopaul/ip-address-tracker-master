@@ -2,8 +2,10 @@ const ipAddress = document.getElementById("ip_address");
 const locationEl = document.getElementById("location");
 const timezoneEl = document.getElementById("timezone");
 const ispEl = document.getElementById("isp");
-const searchForm = document.getElementById("searchForm");
-const ipInput = document.getElementById("ipInput");
+const searchForm1 = document.getElementById("searchForm1");
+const ipInput1 = document.getElementById("ipInput1");
+const searchForm2 = document.getElementById("searchForm2");
+const ipInput2 = document.getElementById("ipInput2");
 
 const API_KEY = "at_nMIDj0h6gZnM4Nnb20hqecdXewEhj";
 
@@ -44,7 +46,12 @@ async function updateTracker(query = "") {
   }
 }
 
-searchForm.addEventListener("submit", e => {
+searchForm1.addEventListener("submit", e => {
   e.preventDefault();
-  updateTracker(ipInput.value.trim());
+  updateTracker(ipInput1.value.trim());
+});
+
+searchForm2.addEventListener("submit", e => {
+  e.preventDefault();
+  updateTracker(ipInput2.value.trim());
 });
